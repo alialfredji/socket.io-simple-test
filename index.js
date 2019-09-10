@@ -1,10 +1,10 @@
-var app = require('express')();
-var http = require('http').createServer(app);
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
-});
+const app = require('express')()
+const http = require('http').createServer(app)
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
-});
+require('./server-client-socket')
+require('./server-socket')(http)
+
+http.listen(3000, () => {
+    console.log('listening on *:3000')
+})
