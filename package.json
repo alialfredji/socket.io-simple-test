@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "my first socket.io app",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "yarn install && nodemon index.js"
   },
   "dependencies": {
     "express": "4.15.2",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "yarn": "^1.17.3"
   }
 }
