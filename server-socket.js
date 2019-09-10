@@ -1,7 +1,7 @@
 
 const io = require('socket.io')
 
-const init = (http) => {
+module.exports = (http) => {
     const linkedSocket = io(http)
 
     linkedSocket.on('connection', (socket) => {
@@ -16,5 +16,3 @@ const init = (http) => {
         })
     });
 }
-
-module.exports = init
