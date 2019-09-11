@@ -1,1 +1,1 @@
-Socket.io simple server client connection
+Server to server socket chat
