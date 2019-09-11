@@ -3,10 +3,15 @@
   "version": "0.0.1",
   "description": "my first socket.io app",
   "scripts": {
-    "start": "yarn install && nodemon index.js"
+    "start:dev": "yarn install && nodemon --watch src -e js index",
+    "start:client:dev": "SOCKET_ENV=client yarn start:dev",
+    "start:server:dev": "SOCKET_ENV=server yarn start:dev",
+    "start:client": "SOCKET_ENV=client node index",
+    "start:server": "SOCKET_ENV=server node index"
   },
   "dependencies": {
     "express": "4.15.2",
+    "node-env-file": "^0.1.8",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
