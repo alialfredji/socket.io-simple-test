@@ -10,7 +10,7 @@
     "start:server": "SOCKET_ENV=server node index"
   },
   "dependencies": {
-    "express": "4.15.2",
+    "express": "4.19.2",
     "node-env-file": "^0.1.8",
     "socket.io": "^2.2.0"
   },
